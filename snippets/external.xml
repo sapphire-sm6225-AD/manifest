@@ -12,6 +12,12 @@
            review="https://review.lineageos.org/"
            revision="refs/heads/lineage-21.0" />
 
+  <!-- Rootdir -->
+  <project path="libcore" name="LineageOS/android_libcore" groups="pdk" remote="LineageOS" revision="refs/changes/93/405193/1" />
+
+  <!-- Build -->
+  <project path="build/release" name="LineageOS/android_build_release" groups="pdk,tradefed" remote="LineageOS" revision="refs/changes/88/405188/1" />
+
   <!-- Device -->
   <project path="device/generic/common" name="LineageOS/android_device_generic_common" groups="pdk" remote="LineageOS" />
   <project path="device/google/atv" name="LineageOS/android_device_google_atv" groups="device,broadcom_pdk,generic_fs,pdk" remote="LineageOS" />
@@ -64,9 +70,10 @@
   <!-- Packages -->
   <project path="packages/apps/EmergencyInfo" name="LineageOS/android_packages_apps_EmergencyInfo" remote="LineageOS" />
   <project path="packages/modules/adb" name="LineageOS/android_packages_modules_adb" groups="pdk" remote="LineageOS" />
-  <project path="packages/modules/Bluetooth" name="LineageOS/android_packages_modules_Bluetooth" groups="pdk" remote="LineageOS" />
+  <project path="packages/modules/Bluetooth" name="LineageOS/android_packages_modules_Bluetooth" groups="pdk" remote="LineageOS" revision="refs/changes/95/405195/1" />
   <project path="packages/modules/common" name="LineageOS/android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" />
-  <project path="packages/modules/Wifi" name="LineageOS/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" />
+  <project path="packages/modules/IntentResolver" name="LineageOS/android_packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="LineageOS" revision="refs/changes/96/405196/1" />
+  <project path="packages/modules/Wifi" name="LineageOS/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" revision="refs/changes/97/405197/1" />
   <project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" />
 
   <!-- System -->
